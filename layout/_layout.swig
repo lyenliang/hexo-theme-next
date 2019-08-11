@@ -42,6 +42,8 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner">{% include '_partials/header/index.swig' %}</div>
+      {% include 'google_adsense.swig' %}
+      {% include 'google_analytics.swig' %}
     </header>
 
     {{ partial('_partials/github-banner.swig', {}, {cache: theme.cache.enable}) }}
