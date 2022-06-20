@@ -15,6 +15,8 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner">{% include '_partials/header/index.swig' %}</div>
+      {% include 'google_adsense.swig' %}
+      {% include 'google_analytics.swig' %}
     </header>
 
     {{ partial('_partials/widgets.swig', {}, {cache: theme.cache.enable}) }}
